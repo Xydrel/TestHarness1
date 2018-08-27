@@ -169,7 +169,10 @@ inline Vector Vector::CrossProduct(const Vector & inVec) const
 
 inline Vector Vector::CrossProduct(const Vector & inVec1, const Vector & inVec2)
 {
-	return Vector();
+				 // XYZZY
+	return Vector(/*X*/ inVec1.Y * inVec2.Z - inVec1.Z * inVec2.Y,
+				  /*Y*/ inVec1.Z * inVec2.X - inVec1.X * inVec2.Z,
+				  /*Z*/ inVec1.X * inVec2.Y - inVec1.Y * inVec2.X);
 }
 
 
