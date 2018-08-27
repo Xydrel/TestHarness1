@@ -46,9 +46,6 @@ public:
 	/** Calculate the dot product of two user supplied Vectors */
 	static float DotProduct(const Vector& inVec1, const Vector& inVec2);
 
-	/** Calculate the cross product of this Vector and a user supplied Vector */
-	Vector CrossProduct(const Vector& inVec) const;
-
 	/** Calculate the cross product */
 	static Vector CrossProduct(const Vector& inVec1, const Vector& inVec2);
 
@@ -153,18 +150,6 @@ inline float Vector::DotProduct(const Vector & inVect) const
 inline float Vector::DotProduct(const Vector & inVec1, const Vector & inVec2)
 {
 	return (inVec1.X * inVec2.X + inVec1.Y * inVec2.Y + inVec1.Z * inVec2.Z);
-}
-
-inline Vector Vector::CrossProduct(const Vector & inVec) const
-{
-	// mnemonic xyzzy is the starting row assigning the x of the new returned Vector
-
-			// X  Y         Z   Z         Y
-	return Vector(Y * inVec.Z - Z * inVec.Y,
-			// Y  Z         X   X         Z
-				  Z * inVec.X - X * inVec.Z,
-			// Z  X         Y   Y         X
-				  X * inVec.Y - Y * inVec.X);
 }
 
 inline Vector Vector::CrossProduct(const Vector & inVec1, const Vector & inVec2)
