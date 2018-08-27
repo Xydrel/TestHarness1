@@ -1,0 +1,35 @@
+##########################
+# Unreal generated files #
+##########################
+
+*/Build
+*/Binaries
+*/DerivedDataCache
+*/Intermediate
+*/Saved
+
+#######################
+# Visual Studio files #
+#######################
+#*.sln
+*.idb
+*.VC.db
+*.VC.opendb
+*.suo
+
+##########################
+# Project specific files #
+##########################
+
+*.tlog
+*.pdb
+*.pch
+*.log
+*.ipch
+*.obj
+*.ilk
+*.exe
+*.lastbuildstate
+
+*03_BuildingEscape/LOCAL/WindowsNoEditor
+
